@@ -40,7 +40,7 @@ def Register(request):
             budget=budget
         )
         submission.save()
-        print("Submitted")
+        
         return redirect('lists')
      else:
          return render(request, "Register.html")
